@@ -67,15 +67,15 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # project-adams
 # composer require livewire/livewire
 # php artisan make:livewire HomeComponent
-#
-#
-#
-#
-#
-#
-#
-#
-#
+# composer require laravel/breeze --dev
+# git checkout -b 0002-admin-and-user-authentication
+# git push --set-upstream origin 0002-admin-and-user-authentication
+# php artisan breeze:install
+# npm install && npm run build
+# php artisan make:middleware AuthRole
+# php artisan make:livewire Admin/AdminDashboardComponent
+# php artisan make:livewire User/UserDashboardComponent
+# php artisan make:livewire Agent/AgentDashboardComponent
 #
 #
 #
