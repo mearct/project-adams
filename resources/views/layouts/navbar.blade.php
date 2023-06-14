@@ -130,7 +130,7 @@
                     <span class="mr-2 d-none d-lg-inline text-gray-600 small"> Sign Up</span>
                 </a>
             </li>
-        @endif
+        @endauth
     </ul>
 
 </nav>
