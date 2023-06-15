@@ -76,8 +76,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # php artisan make:livewire Admin/AdminDashboardComponent
 # php artisan make:livewire User/UserDashboardComponent
 # php artisan make:livewire Agent/AgentDashboardComponent
-# 
-#
+# php artisan make:seeder UsersTableSeeder
+# php artisan migrate:fresh --seed
 #
 #
 #
