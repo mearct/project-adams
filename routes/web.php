@@ -1,6 +1,7 @@
 <?php
 
 // use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RegionController;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Agent\AgentDashboardComponent;
 use App\Http\Livewire\HomeComponent;
@@ -36,6 +37,8 @@ Route::get('/', HomeComponent::class)->name('home.index');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/user/dashboard', UserDashboardComponent::class)->name('user.dashboard');
+    Route::resource('regions', RegionController::class)
+        ->only(['index', 'store', 'update', 'destroy']);
 });
 
 Route::middleware(['auth', 'authrole'])->group(function () {
